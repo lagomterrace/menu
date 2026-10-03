@@ -213,33 +213,35 @@
   
   /* ===== IMPROVED STICKY ALLERGY NOTICE - FULLY VISIBLE ===== */
   .allergy-notice-sticky {
-    position: sticky;
-    top: 58px; /* sits directly below sticky nav */
-    z-index: 99;
-    background: rgba(6, 50, 47, 0.98);
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--alert-yellow);
-    border-top: 1px solid rgba(247, 224, 94, 0.4);
-    padding: 14px 20px;
-    text-align: center;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: var(--alert-yellow);
-    letter-spacing: 0.3px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    width: 100%;
+      position: sticky;
+  top: 58px;
+  z-index: 99;
+  background: rgba(6, 50, 47, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--alert-yellow);
+  border-top: 1px solid rgba(247, 224, 94, 0.4);
+  padding: 0; /* was 14px 20px */
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--alert-yellow);
+  letter-spacing: 0.3px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 100%;
   }
   .allergy-notice-sticky span {
-    background: rgba(247, 224, 94, 0.1);
-    display: inline-block;
-    padding: 6px 28px;
-    border-radius: 60px;
-    border-left: 3px solid var(--alert-yellow);
-    border-right: 1px solid rgba(247, 224, 94, 0.5);
-    font-weight: 500;
-    backdrop-filter: blur(4px);
-    max-width: 90%;
-    line-height: 1.4;
+  background: rgba(247, 224, 94, 0.1);
+  display: block;          /* was inline-block */
+  padding: 14px 20px;
+  border-radius: 0;        /* was 60px */
+  border-left: none;       /* removed so it reaches the edge */
+  border-right: none;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  max-width: 100%;         /* was 90% */
+  width: 100%;
+  line-height: 1.4;
+
   }
   
   .sticky-nav {
